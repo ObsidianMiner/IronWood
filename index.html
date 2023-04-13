@@ -29,6 +29,12 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
+            
+            background-image: url('Background.png');
+            background-color: black;
+            background-size: 50%;
+            text-align: center;
+            color = white
         }
     </style>
   </head>
@@ -45,14 +51,7 @@
     </div>
     
     <header>
-        <style>
-            body {
-                background-image: url('Background.png');
-                background-color: black;
-                background-size: 50%;
-                text-align: center;
-            }
-        </style>
+
     </header>>
 
     <script>
@@ -75,7 +74,7 @@
         var div = document.createElement('div');
         div.innerHTML = msg;
         warningBanner.appendChild(div);
-        if (type == 'error') div.style = 'background: red; padding: 10px;';
+        if (type == 'error') div.style = 'background: darkred; padding: 10px;';
         else {
           if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
           setTimeout(function() {
@@ -123,7 +122,7 @@
         canvas.style.width = window.innerWidth + 'px';
         canvas.style.height = window.innerHeight + 'px';
 
-        unityShowBanner('WebGL builds are not supported on mobile devices.');
+        unityShowBanner('IronWood does not support mobile. :(');
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
